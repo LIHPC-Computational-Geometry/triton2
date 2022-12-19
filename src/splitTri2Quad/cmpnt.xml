@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Composante splitTri2Quad, Projet Triton2 -->
+
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:noNamespaceSchemaLocation="/ccc/products/nec/bin/gscc/xsd/GsccCommonGrammar.xsd"
+		   target="exe">
+	<plugins>c++</plugins>
+	
+
+	<library>GMDSCEA</library>
+	<library>gmds_extern</library>
+
+
+</component>

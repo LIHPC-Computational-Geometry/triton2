@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Composante Test, Projet Triton2 -->
+
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:noNamespaceSchemaLocation="/ccc/products/nec/bin/gscc/xsd/GsccCommonGrammar.xsd"
+		   target="exe">
+    <plugins>c++</plugins>
+	
+	<library version="1.12.1">cppunit</library>
+    
+	
+	<library>pthread</library>
+	
+	 <library version="6.9.0_build0001">OpenCascade</library>
+ 	<add_definitions>-DNG_OCCGEOMETRY</add_definitions>
+	
+	<local_library>Triton2</local_library>
+	
+	<library>GMDSCEA</library>
+	<library>gmds_extern</library>
+	
+	
+</component> 

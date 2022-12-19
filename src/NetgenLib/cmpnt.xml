@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Composante NetgenLib, Projet Triton2 -->
+
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:noNamespaceSchemaLocation="/ccc/products/nec/bin/gscc/xsd/GsccCommonGrammar.xsd"
+		   target="shlib">
+	<plugins>c++</plugins>
+	
+
+    <library version="7.1.0_patch1">OpenCascade</library>
+    <add_definitions>-DNG_OCCGEOMETRY</add_definitions>
+</component>
