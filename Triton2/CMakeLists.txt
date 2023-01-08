@@ -30,7 +30,7 @@ set_source_files_properties(src/tetgen/predicates.cxx PROPERTIES COMPILE_FLAGS -
 #==============================================================================
 # DEPENDENCIES
 #==============================================================================
-find_package(gmds REQUIRED)
+find_package(mgx_gmds REQUIRED)
 include_directories(${GMDS_INCLUDE_DIR})
 
 find_package(gmdscea REQUIRED)
@@ -57,7 +57,7 @@ add_library(triton2 ${TRITON2_HEADER_FILES} ${TRITON2_SRC_FILES})
 #target_compile_features(gmds PUBLIC cxx_std_11)
 
 
-target_link_libraries(triton2 PRIVATE gmds gmdscea)
+target_link_libraries(triton2 PRIVATE mgx_gmds gmdscea)
 
 #add_custom_command(
 #   TARGET gmds
