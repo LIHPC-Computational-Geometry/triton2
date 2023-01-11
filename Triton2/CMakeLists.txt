@@ -30,7 +30,7 @@ set_source_files_properties(src/tetgen/predicates.cxx PROPERTIES COMPILE_FLAGS -
 #==============================================================================
 # DEPENDENCIES
 #==============================================================================
-find_package(mgx_gmds REQUIRED)
+find_package(gmds REQUIRED)
 include_directories(${GMDS_INCLUDE_DIR})
 
 find_package(gmdscea REQUIRED)
