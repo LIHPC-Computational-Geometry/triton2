@@ -48,7 +48,7 @@ jobs:
           source spack_env_file.sh
           cmake -DCMAKE_INSTALL_PREFIX=${{env.INSTALL_DIR}} .
           make -j
-          # make test
+          make test
 
       - name: Test c++ lib install
         shell: bash
