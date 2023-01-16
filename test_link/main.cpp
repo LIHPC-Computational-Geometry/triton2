@@ -1,6 +1,6 @@
 #include <iostream>
 /*----------------------------------------------------------------------------*/
-#include <Triton2/TetgenInterface/TetgenFacade.h>
+#include <Triton2/TetgenFacade.h>
 /*----------------------------------------------------------------------------*/
 using namespace gmds;
 int main() {
