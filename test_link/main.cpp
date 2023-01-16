@@ -12,7 +12,7 @@ int main() {
         boundary_mesh.newNode(1,1);
 
         IGMesh vol_mesh(mod);
-        TetgenFacade f;
+	triton::TetgenFacade f;
         f.generateTetMesh(boundary_mesh, vol_mesh);
 
         return 0;
