@@ -1,5 +1,10 @@
 set(TRITON2_VERSION x.y.z)
 
+include(CMakeFindDependencyMacro)
+find_dependency(gmds)
+find_dependency(gmdscea)
+
+
 @PACKAGE_INIT@
 
 set_and_check(TRITON2_INCLUDE_DIR "@PACKAGE_INCLUDE_INSTALL_DIR@")
