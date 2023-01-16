@@ -1,6 +1,6 @@
 #include <iostream>
 /*----------------------------------------------------------------------------*/
-#include <GMDS/IG/IGMesh.h>
+#include <Triton2/NetgenInterface/NetgenFacade.h>
 /*----------------------------------------------------------------------------*/
 using namespace gmds;
 int main() {
@@ -8,21 +8,11 @@ int main() {
         IGMesh mesh(mod);
         mesh.newNode(0,0);
         mesh.newNode(0,1);
-        Variable<int> *v = mesh.newVariable<int>(GMDS_NODE,"var1");
-
         mesh.newNode(1,0);
         mesh.newNode(1,1);
 
-        IGMesh::node_iterator it = mesh.nodes_begin();
+        NetgenFacade f;
+        f.createGMDSMesh(mesh);
 
-        for(;!it.isDone();it.next()){
-                TCellID i = (it.value()).getID();
-                int n = (*v)[i];
-                (*v)[i]=1;
-        }
-        for(it=mesh.nodes_begin();!it.isDone();it.next()){
-                TCellID i = (it.value()).getID();
-                int n = (*v)[i];
-        }
-    return 0;
+        return 0;
 }
