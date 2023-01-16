@@ -3,12 +3,12 @@ project(test_link)
 
 set(CMAKE_CXX_STANDARD 14)
 
+find_package(gmds REQUIRED)
 find_package(triton2 REQUIRED)# CONFIG COMPONENTS A B)
 
 add_executable(test_link  main.cpp)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE triton2)
-
 
 enable_testing()
 add_test(
