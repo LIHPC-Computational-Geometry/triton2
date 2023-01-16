@@ -20,6 +20,7 @@ set(TRITON2_HEADER_FILES
 
 
 set(TRITON2_SRC_FILES
+        src/NetgenFacade.cpp
         src/TetgenFacade.cpp
 	src/tetgen/tetgen.cxx
 	src/tetgen/predicates.cxx
