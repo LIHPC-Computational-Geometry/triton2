@@ -4,7 +4,7 @@ project(test_link)
 set(CMAKE_CXX_STANDARD 14)
 
 find_package(gmds REQUIRED)
-find_package(triton2 REQUIRED)# CONFIG COMPONENTS A B)
+find_package(triton2 REQUIRED)
 
 add_executable(test_link  main.cpp)
 
