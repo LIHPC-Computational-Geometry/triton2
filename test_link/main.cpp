@@ -12,10 +12,10 @@ int main() {
         Node n2 = plc.newNode(10,10,0);
         Node n3 = plc.newNode(10,0,0);
 
-        Node n4 = plc.newNode(0,0,10);
-        Node n5 = plc.newNode(0,10,10);
-        Node n6 = plc.newNode(10,10,10);
-        Node n7 = plc.newNode(10,0,10);
+        Node n4 = plc.newNode(0,0,30);
+        Node n5 = plc.newNode(0,10,30);
+        Node n6 = plc.newNode(10,10,30);
+        Node n7 = plc.newNode(10,0,30);
 
         IGMesh::surface& surf1 = plc.newSurface("s1");
         surf1.add(plc.newTriangle(n0,n1,n2));
